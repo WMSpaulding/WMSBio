@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!--
+Project Name: Portfolio
+Author: William Spaulding
+Description: A portfolio based website.
+-->
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style.css?v=1.0">
+	</head>
+	
+	<body>
+		<!-- Navigation Bar -->
+		<div id="navigation">
+			<ul>
+				<li class="dropdown">
+					<a href="../../index.html" class="dropbtn" id="HomeF">Home</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn" id="EducationF">Education</a>
+					<div class="dropdown-content">
+						<a id="Collegiate-School" href="../Education/Collegiate.html">Collegiate</a>
+						<a id="Naval-School" href="../Education/Naval.html">Naval</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="../Experience/Experience.html" class="dropbtn" id="ExperienceF">Experience</a>
+				</li>
+				<li class="dropdown activeDrop">
+					<a href="javascript:void(0)" class="dropbtn" id="PortfolioF">Portfolio</a>
+					<div class="dropdown-content">
+						<a id="Java" href="../Portfolio/Java.html">Java</a>
+						<a id="CSharp" href="../Portfolio/CSharp.html">CSharp</a>
+						<a id="VisualBasic" href="../Portfolio/VisualBasic.html" class="active">VisualBasic</a>
+						<a id="AdobeAnimate" href="../Portfolio/AdobeAnimate.html">Adobe Animate</a>
+						<a id="Websites" href="../Portfolio/Websites.html">HTML/CSS/Javascript</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="../News/News.html" class="dropbtn" id="ExperienceF">News</a>
+				</li>
+				<li class="dropdown right">
+					<a href="../Contact/Contact.html" class="dropbtn" id="ContactF">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Project Selection Handling -->
+		<div id="selection">
+			<h1>Project Selection</h1>
+			<div id="MouseApps" class="select">
+				<p>MouseApps<br><br>[SELECT]<br>Click for more information!</p>
+				<img alt="MouseApps" src="../../images/visualbasic/MouseApps.png" />
+			</div>
+			<div id="SoccerStats" class="select">
+				<p>SoccerStats<br><br>[SELECT]<br>Click for more information!</p>
+				<img alt="SoccerStats" src="../../images/visualbasic/SoccerStats.png" />
+			</div>
+		</div>
+		
+		<!-- Video Handling -->
+		<div id="video">
+			<iframe id="vid" width="720" height="405" src="https://www.youtube.com/embed/8fpzb0K7Epw" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+		<!-- Social Media -->
+		<div id="sidebar">
+			<a href="https://twitter.com/WilliamSpauldi4" target="_blank">
+				<img src="../../images/twitter.png" width="50" height="50" alt="twitter link"/>
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100009659238834" target="_blank">
+				<img src="../../images/facebook.png" width="50" height="50" alt="facebook link"/>
+			</a>
+			<a href="https://twitch.tv/MistrMouse" target="_blank">
+				<img src="../../images/twitch.png" width="50" height="50" alt="facebook link"/>
+			</a>
+		</div>
+			
+		<!-- Copyright/Other -->
+		<div id="footer">
+			<p>Webpage design &#169; 2016 by <a href="mailto:spauldingwm@gmail.com">William Spaulding</a></p>
+		</div>
+		
+		<!-- Javascript load -->
+		<script src="../../javascript/video.js"></script>
+		<script src="../../javascript/projects.js"></script>
+	</body>
+</html>

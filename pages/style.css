@@ -1,0 +1,537 @@
+/* Text Format */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1B1B17;
+}
+
+a {
+	color: #5b7ef0;
+	text-decoration: none;
+}
+
+/* Editing tools */
+div {
+	border-width: 1px;
+	border-style: dashed;
+	border-color: transparent;
+	/*border-radius: 10px;*/
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.indent {
+	text-indent: 30px;
+}
+
+.nomargin {
+	margin: 0;
+}
+
+/* Navigation Bar */
+
+#navigation {
+	position: fixed;
+	width: 100%;
+	min-width: 600px;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+#navigation li:not(.right) {
+	float: left;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #14495A;
+	width: 100%;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #20B2AA;
+}
+
+.activeDrop {
+	background-color: #008080;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a.active {
+	background-color: dimgray;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	background-color: white;
+}
+
+.dropdown-content a:hover {
+	background-color: darkgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Classes and ID Containers */
+
+#content {
+	position: relative;
+	top: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	margin-bottom: 200px;
+	width: 750px;
+	background-color: gray;
+	z-index: 0;
+}
+
+#content h1 {
+	text-align: center;
+}
+
+#content p {
+	margin: 30px;
+}
+
+#navypier {
+	position: relative;
+	float: right;
+	top: -50px;
+	right: -50px;
+	height: 150px;
+	width: 400px;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px black;
+}
+
+#wrapper1 {
+	position: fixed;
+	top: 50px;
+	right: 3px;
+	bottom: 25px;
+	height: auto;
+	width: 300px;
+	overflow: hidden;
+	background-color: #14495A;
+	z-index: 1;
+}
+
+#skillbar {
+	position: relative;
+	left: 0;
+	top: 0;
+	right: -15px;
+	height: calc(100% + 14px);
+	width: 315px;
+	overflow: scroll;
+}
+
+#skillbar h1 {
+	background-color: #163838;
+	margin: 0 5px 0 0;
+}
+
+#skillbar a {
+	display: block;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+    background-color: #008080;
+    text-align: center;
+    padding: 14px 16px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	color: white;
+}
+
+#skillbar a:hover{
+	background-color: #20B2AA;
+}
+
+#sidebar {
+	position: fixed;
+	left: 0;
+	top: 40%;
+	width: 50px;
+	z-index: 1;
+}
+
+#sidebar a {
+	display: block;
+}
+
+#email {
+	position: relative;
+	width: 600px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: black;
+	padding-bottom: 50px;
+	z-index: 1;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	font-size: 50%;
+	text-align: center;
+	vertical-align: bottom;
+	overflow: hidden;
+	font-size: .5vw;
+	color: white;
+	background-color: #14495A;
+	z-index: 2;
+}
+
+#resume {
+	position: absolute;
+	background-color: black;
+	width: 200px;
+	height: 300px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	margin-right: 100px;
+}
+
+#resume p {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 0;
+}
+
+#resume img {
+	position: absolute;
+	right: -100px;
+	width: 200px;
+	height: 300px;
+	z-index: 1;
+}
+
+#resume img:hover {
+	opacity: .5;
+}
+
+#selection {
+	position: relative;
+	top: 50px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	color: white;
+	text-align: center;
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	background-color: black;
+	margin: 10px;
+}
+
+.select p {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	color: white;
+	z-index: 0;
+}
+
+.select img {
+	position: absolute;
+	display: inline-block;
+	top: -10px;
+	left: -10px;
+	margin: 10px;
+	width: 300px;
+	height: 200px;
+	z-index: 1;
+}
+
+.select img:hover {
+	opacity: .5;
+}
+
+#video {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .5;
+}
+
+@media only screen and (max-width:1300px){
+	#wrapper1 {
+		display: none;
+	}
+	#resume {
+		display: none;
+	}
+}
+
+/* Home Video Introduction */
+.videoContainer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 10;
+}
+
+.videoContainer video {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 800px;
+	height: 400px;
+	position: absolute;
+	background-color: black;
+	border-color: black;
+	border-radius: 10px;
+	padding: 20px;
+	z-index: 7;
+}
+
+.videoContainer .overlay img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	border-color: black;
+	border-radius: 10px;
+	padding: 20px;
+	opacity: .5;
+	z-index: 6;
+}
+
+.videoContainer .background {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .5;
+	z-index: 5;
+}
+
+.videoContainer .exit {
+	position: absolute;
+	width: 875px;
+	height: 475px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.videoContainer .exit img {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	float: right;
+	opacity: .5;
+	z-index: 8;
+}
+
+.videoContainer img:hover {
+	opacity: 1;
+}
+
+/* Multiple IMG Transition Calculation 
+While: n = number of images
+imgBounds = 100% / n
+no. Of classes = n
+delay = (animation duration / n) * (imageNumber - 1)
+
+i.e. Two Images -
+imgBounds = 100% / 2 = 50% 
+
+This means that there will be a new image start transition
+every 50% that passes, but only when we deal with the delay.
+
+0% - keyframeMin%
+50% - keyframeMax%
+
+For the keyframe, these are where you will want to transition
+the images. Keep in mind, you will have to make more instances
+if you care to allow for -webkit-, -moz-, and -o-.
+
+@keyframes img {
+	0%	{opacity: 0;}
+	2%	{opacity: .2;}
+	4%	{opacity: .4;}
+	6%	{opacity: .6;}
+	8%	{opacity: .8;}
+	10%	{opacity: 1;}
+	42%	{opacity: .8;}
+	44%	{opacity: .6;}
+	46%	{opacity: .4;}
+	48%	{opacity: .2;}
+	50% {opacity: 0;}
+}
+
+Then, for the animation, we have a class for each animation and 
+create a delay according to how many images we have:
+
+.animation .img1 {
+	opacity: 0;
+	animation: img 20s infinite;
+}
+
+.animation .img2 {
+	opacity: 0;
+	animation: img 20s 10s infinite;
+}
+
+Another thing to keep in mind, the container that you are placing the
+images inside needs to apply the following:
+
+.animation .img {
+	position: absolute;
+}
+
+I also suggest adding parameters for width, height, and even border-radius,
+but from this point the display elements are all on you!
+
+For the HTML code, the structure should look like this:
+
+		<div class="animation">
+			<div class="img1">
+				<image src="images/test1.png"/>
+			</div>
+			<div class="img2">
+				<image src="images/test2.png"/>
+			</div>
+		</div>
+
+Good Luck!
+
+*/
+
+/* Transition Keyframe */ 
+
+@keyframes imgTrans {
+	0%	{opacity: 0;}
+	1%	{opacity: .2;}
+	2%	{opacity: .4;}
+	3%	{opacity: .6;}
+	4%	{opacity: .8;}
+	5%	{opacity: 1;}
+	20%	{opacity: 1;}
+	21%	{opacity: .8;}
+	22%	{opacity: .6;}
+	23%	{opacity: .4;}
+	24%	{opacity: .2;}
+	25%	{opacity: 0;}
+}
+
+/* IMG Transition Classes and IDs */
+#animation {
+	position: relative;
+	float: right;
+	height: 200px;
+	width: 300px;
+	left: -100px;
+}
+
+#animation img {
+	position: absolute;
+	top: -85px;
+	left: 150px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-height: 200px;
+	border-radius: 25px;
+}
+
+#animation .img1 {
+	opacity: 0;
+	animation: imgTrans 40s 0s linear infinite;
+}
+
+#animation .img2 {
+	opacity: 0;
+	animation: imgTrans 40s 10s linear infinite;
+	left: 100px;
+}
+
+#animation .img3 {
+	opacity: 0;
+	animation: imgTrans 40s 20s linear infinite;
+	left: 100px;
+}
+
+#animation .img4 {
+	opacity: 0;
+	animation: imgTrans 40s 30s linear infinite;
+}
+
+#animation .frame {
+	border-width: 10px;
+	border-style: solid;
+	border-color: #ffffff;
+	box-shadow: 10px 10px 15px rgba(0,0,0,.3);
+	margin: 20px;
+	margin-bottom: 30px;
+	margin-top: 100px;
+}

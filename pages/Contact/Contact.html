@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+Project Name: Portfolio
+Author: William Spaulding
+Description: A portfolio based website.
+-->
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style.css?v=1.0">
+	</head>
+	
+	<body>
+		<!-- Navigation Bar -->
+		<div id="navigation">
+			<ul>
+				<li class="dropdown">
+					<a href="../../index.html" class="dropbtn" id="HomeF">Home</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn" id="EducationF">Education</a>
+					<div class="dropdown-content">
+						<a id="Collegiate-School" href="../Education/Collegiate.html">Collegiate</a>
+						<a id="Naval-School" href="../Education/Naval.html">Naval</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="../Experience/Experience.html" class="dropbtn" id="ExperienceF">Experience</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn" id="PortfolioF">Portfolio</a>
+					<div class="dropdown-content">
+						<a id="Java" href="../Portfolio/Java.html">Java</a>
+						<a id="CSharp" href="../Portfolio/CSharp.html">CSharp</a>
+						<a id="VisualBasic" href="../Portfolio/VisualBasic.html">VisualBasic</a>
+						<a id="AdobeAnimate" href="../Portfolio/AdobeAnimate.html">Adobe Animate</a>
+						<a id="Websites" href="../Portfolio/Websites.html">HTML/CSS/Javascript</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="../News/News.html" class="dropbtn" id="ExperienceF">News</a>
+				</li>
+				<li class="dropdown right activeDrop">
+					<a href="../Contact/Contact.html" class="dropbtn" id="ContactF">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Email Section -->
+		<div id="content">
+		<form id="email">
+			<div class="center">
+				<h1 style="color: #14495A">Contact Form</h1>
+				<p>If at any time you may need to contact me, please fill out the form below and meet all of the requirements for every field. Please feel free to report any inconveniences, suggestions, and remarks!</p>
+			</div>
+			<font color="#6D0000">* Required</font>
+			<br><br>*Name:<br>
+			<input name="name" type="text" />
+			<br><br>Number:<br>
+			<input name="number" type="text" />
+			<br><br>*Email:<br>
+			<input name="email" type="text" />
+			<br><br>Subject:<br>
+			<input name="subject" type="text" />
+			<br><br>*Message:<br>
+			<textarea name="message" rows="4" cols="50"></textarea>
+			<br><br>
+			<input id="submit" type="submit" value="Submit" onclick="button()" />
+		</form>
+		</div>
+		
+		<!-- Social Media -->
+		<div id="sidebar">
+			<a href="https://twitter.com/WilliamSpauldi4" target="_blank">
+				<img src="../../images/twitter.png" width="50" height="50" alt="twitter link"/>
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100009659238834" target="_blank">
+				<img src="../../images/facebook.png" width="50" height="50" alt="facebook link"/>
+			</a>
+			<a href="https://twitch.tv/MistrMouse" target="_blank">
+				<img src="../../images/twitch.png" width="50" height="50" alt="facebook link"/>
+			</a>
+		</div>
+			
+		<!-- Copyright/Other -->
+		<div id="footer">
+			<p>Webpage design &#169; 2016 by <a href="mailto:spauldingwm@gmail.com">William Spaulding</a></p>
+		</div>
+		
+		<script src="../../javascript/email.js"></script>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!--
+Project Name: Portfolio
+Author: William Spaulding
+Description: A portfolio based website.
+-->
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="pages/style.css?v=1.5">
+	</head>
+	
+	<body>
+		<!-- Navigation Bar -->
+		<div id="navigation">
+			<ul>
+				<li class="dropdown activeDrop">
+					<a href="index.html" class="dropbtn" id="HomeF">Home</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn" id="EducationF">Education</a>
+					<div class="dropdown-content">
+						<a id="Collegiate-School" href="pages/Education/Collegiate.html" class="active">Collegiate</a>
+						<a id="Naval-School" href="pages/Education/Naval.html">Naval</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="pages/Experience/Experience.html" class="dropbtn" id="ExperienceF">Experience</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn" id="PortfolioF">Portfolio</a>
+					<div class="dropdown-content">
+						<a id="Java" href="pages/Portfolio/Java.html">Java</a>
+						<a id="CSharp" href="pages/Portfolio/CSharp.html">CSharp</a>
+						<a id="VisualBasic" href="pages/Portfolio/VisualBasic.html">VisualBasic</a>
+						<a id="AdobeAnimate" href="pages/Portfolio/AdobeAnimate.html">Adobe Animate</a>
+						<a id="Websites" href="pages/Portfolio/Websites.html">HTML/CSS/Javascript</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="pages/News/News.html" class="dropbtn" id="ExperienceF">News</a>
+				</li>
+				<li class="dropdown right">
+					<a href="pages/Contact/Contact.html" class="dropbtn" id="ContactF">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Video Overlay Control -->
+		<div id="videoContainer" class="videoContainer">
+			<div id="videoBackground" class="background"></div>
+			<video autoplay src="videos/test.mp4" id="vid"></video>
+			<div id="overlay" class="overlay">
+				<img id="videoOverlay" src="images/play.png" />
+			</div>
+			<div class="exit">
+				<img id="videoExit" src="images/exit.png"/>
+			</div>
+			<script src="javascript/video.js"></script>
+		</div>
+		
+		<!-- About me section -->
+		<div id="content">
+			<!-- Images for transitioning -->
+			<div id="animation">
+				<img class="img1 frame" src="images/test1.jpg"/>
+				<img class="img2 frame" src="images/test2.jpg"/>
+				<img class="img3 frame" src="images/test3.jpg"/>
+				<img class="img4 frame" src="images/test4.jpg"/>
+			</div>
+			
+			<h1>- About Me -</h1>
+			
+			<p class="indent">
+				Growing up, my father used to take me to work. He would say to me, "You are smart and capable enough in doing anything you want in life", in which I believe him even to this day. It takes motivation and focus, but people are capable of an extra-ordinary amount of things if they put their mind to something. My story starts with my father trying to instill a motivation and focus inside myself, all the way back to those jobsites he brought me to as a kid.
+			</p>
+			<p class="indent">
+				While a babysitter may have been an option, I feel as though my dad took me to work to help me figure out what is best for me when it comes to work in the future. He was an electrical contractor, which means I spent most of my days growing up on a construction site, with broom in hand at the start. This is where I think my passion to learn more came in to play, because I hated cleaning so much. I spent most my time eavesdropping on my dad and his conversations with other workers on how to do things the right and more efficient way when it comes to electrical work. Needless to say, it helped me learn what I needed to know to get better and extend my job-title from custodial work. Next thing I knew I was devicing, then bending pipe and wiring houses, to finally even being able to have people under my wing as an adult. Those days taught me a lot, and helped me progress from custodial work to being able to call myself an electrician as an adult, but not the only thing.
+			</p>
+			<p class="indent">
+				Working with my father was only during the summer, in which when I was a teenager I found a passion for working with computers. Video games were a huge part of my life, and I remember when I was playing a first person shooter game called "Counter-Strike: Source" that I found my love for programming. There was a mod in the game that was called the "Warcraft Mod", in which I looked up the site that the mod came from and became engrossed in the community. The mod had a simple concept; upon game join, choose a race, and level up to get more skills. At first, I joined the site to see what new races would come out, but looking at the code for the races people put out, it made sense to me on how to make my own, as though reading an instruction book. I started making my own races for game play and became well known throughout the community. The site even gave me my own forum section because of the content I put out, in which there were only a select few out of the hundreds that were posting every day. I went from coding races, to suddenly making my own mods too and helping run servers for people. I was an FTP admin for a select number of server owners, and then opened my own for fun. Computer systems and programming offered a never-ending source for challenges and problem solving, in which it made me feel even more motivated with this passion to learn programming, but then later on I had to make a decision.
+			</p>
+			<p class="indent">
+				No matter what experience a person has by the age of eighteen, the decision of what to do after highschool is considered one of the biggest aspects of where life will take a person. One thing I knew was that college was expensive, and falling into debt was not a great idea in my book. This lead me to make the decision to join the military, and stray a bit from the programming world. The chance to get into shape, travel across seas, and be a part of a close knit group was more than enough for me to want the military life. The thing they noticed though, was the extent of my education, leading the United States Navy to want me to become a Nuclear Engineer with a specialty in Electrical Systems. I made it through the entire two year pipeline of training, graduated, and was sent off to seas. The military taught me an important lesson aside from furthering my education, and that was one of morality. I was faced with a decision of morality during my time out at sea, one that it is not a good story for anyone to have to go through, but in the end it strengthened the core values that training puts a sailor through; honor, courage, and commitment. With this training, I left and decided to use my benefits as a veteran to further my education through college.
+			</p>
+			<p class="indent">
+				The end of my story is not really the end, it is just unwritten. Right now I am still holding onto the lesson my father taught me in motivation and focus, the lesson programming taught me in having a passion for something, and the lesson of the military to hold onto my core beliefs. I am who I am due to my experiences. I can call myself a veteran, an electrician, even a custodial worker, but most importantly, I will always be a student. Learning and working towards a goal through every experience life throws at me.
+			</p>
+		</div>
+		
+		<!-- Social Media -->
+		<div id="sidebar">
+			<a href="https://twitter.com/WilliamSpauldi4" target="_blank">
+				<img src="images/twitter.png" width="50" height="50" alt="twitter link"/>
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100009659238834" target="_blank">
+				<img src="images/facebook.png" width="50" height="50" alt="facebook link"/>
+			</a>
+			<a href="https://twitch.tv/MistrMouse" target="_blank">
+				<img src="images/twitch.png" width="50" height="50" alt="facebook link"/>
+			</a>
+		</div>
+			
+		<!-- Copyright/Other -->
+		<div id="footer">
+			<p>Webpage design &#169; 2016 by <a href="mailto:spauldingwm@gmail.com">William Spaulding</a></p>
+		</div>
+	</body>
+</html>
