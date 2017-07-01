@@ -300,12 +300,23 @@ li.dropdown {
 	opacity: .5;
 }
 
+#vid {
+	width: 720px;
+	height: 405px;
+}
+
 #video {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-color: black;
 	opacity: .5;
+}
+
+#video2 {
+	position: relative;
+	margin-top: 100px;
+	text-align: center;
 }
 
 @media only screen and (max-width:1300px){
